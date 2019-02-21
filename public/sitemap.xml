@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/getting-started/</loc>
+  </url>
+  
+  <url>
+    <loc>/releases/5.x.x/</loc>
+  </url>
+  
+  <url>
+    <loc>/releases/6.x.x/</loc>
+  </url>
+  
+  <url>
+    <loc>/releases/7.x.x/</loc>
+  </url>
+  
+  <url>
+    <loc>/development/</loc>
+  </url>
+  
+  <url>
+    <loc>/getting-started/requirements/</loc>
+  </url>
+  
+  <url>
+    <loc>/development/translating/</loc>
+  </url>
+  
+  <url>
+    <loc>/getting-started/installation/</loc>
+  </url>
+  
+  <url>
+    <loc>/administration/</loc>
+  </url>
+  
+  <url>
+    <loc>/getting-started/configuration/</loc>
+  </url>
+  
+  <url>
+    <loc>/releases/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

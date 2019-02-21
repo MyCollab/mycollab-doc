@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on Documentation for MyCollab</title>
+    <link>/development/</link>
+    <description>Recent content in Development on Documentation for MyCollab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="/development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
