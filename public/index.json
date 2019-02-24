@@ -1,10 +1,17 @@
 [
 {
+	"uri": "/administration/auto-upgrade/",
+	"title": "Auto Upgrade",
+	"tags": [],
+	"description": "",
+	"content": "TBD\n"
+},
+{
 	"uri": "/getting-started/",
 	"title": "Getting started",
 	"tags": [],
 	"description": "",
-	"content": " Getting started If you are getting started with MyCollab, reading this section. It will help you know how to install and configure MyCollab to let it run well in your organization.\n"
+	"content": " Getting started If you are getting started with MyCollab, reading this section. It will help you know how to install and configure MyCollab to let it run well in your organization.\n Requirements   Installation   Configuration   Need Help   Editions   "
 },
 {
 	"uri": "/releases/5.x.x/",
@@ -25,7 +32,7 @@
 	"title": "MyCollab 7.x.x",
 	"tags": [],
 	"description": "",
-	"content": " Version 7.0.0 Library Upgrades\n Java driver, Mybatis, Spring boot, Vaadin, Infinispan, etc.  Improvements \u0026amp; New Features\n Improve the overall performance Remove the CRM, and File Management module Support multiple database. Tested MyCollab with MySQL, H2 New theme Mobile friend-ly support Upgrade the UI pages to Vaadin 8 Support java 8 date time Reliable testing test cases Can reuse the resource assets across multiple MyCollab instances Update localization from the community Support basic report features in the community version  Bug Fixes\n Can not reset password Do not display project dashboard when project is archived Only display open projects in the project list view Export to Excel documents are failed in some categories Can not search by types in the ticket dashboard Export files support localization Admin can see all projects in the organization not only their involved projects only Do not display the changesets of Project type Fix issue can not send notification for some users Fix issue can not send email invitation when invite user  "
+	"content": " Version 7.0.1 Improvements \u0026amp; New Features\n Add file module to the project Manage email verification statuses  Bug Fixes\n Show error message when user edit ticket which has unset duration value Some long text don\u0026rsquo;t display in the box Can not display the right date value in project notification  Version 7.0.0 Library Upgrades\n Java driver, Mybatis, Spring boot, Vaadin, Infinispan, etc.  Improvements \u0026amp; New Features\n Improve the overall performance Remove the CRM, and File Management module Support multiple database. Tested MyCollab with MySQL, H2 New theme Mobile friend-ly support Upgrade the UI pages to Vaadin 8 Support java 8 date time Reliable testing test cases Can reuse the resource assets across multiple MyCollab instances Update localization from the community Support basic report features in the community version  Bug Fixes\n Can not reset password Do not display project dashboard when project is archived Only display open projects in the project list view Export to Excel documents are failed in some categories Can not search by types in the ticket dashboard Export files support localization Admin can see all projects in the organization not only their involved projects only Do not display the changesets of Project type Fix issue can not send notification for some users Fix issue can not send email invitation when invite user  "
 },
 {
 	"uri": "/development/",
@@ -33,6 +40,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Development "
+},
+{
+	"uri": "/administration/manual-upgrade/",
+	"title": "Manual Upgrade",
+	"tags": [],
+	"description": "",
+	"content": " Manual upgrade is similar than installing the new MyCollab instance, except you re-use the database files and the file assets of the previous version.\nStop the current MyCollab running   Windows   Open the Windows Explorer, go to the folder $MYCOLLAB_HOME/bin and click the bat file shutdown.bat\n    Linux, MacOS   Open the terminal, go to the folder $MYCOLLAB_HOME/bin and run the script file shutdown.sh\n  Download MyCollab Go to https://mycollab.com/on-premise/ and select the appropriate MyCollab distribution for your organization. Delete the folders bin, lib, config, i18 and unzip the downloaded file to the existing MyCollab folder.\nDo not delete the entire old MyCollab installation folder before getting everything done! All of file assets are kept in the hidden folder .mycollab. If you delete this folder then all file uploads such as attachments, profile pictures, documents, etc. will be deleted permanently.\n Then you follow the instruction Install MyCollab on your server, and re-enter your database information, mail settings, etc. Then it will redirect you to the login page without setting up the application parameters again.\n"
 },
 {
 	"uri": "/getting-started/requirements/",
@@ -70,11 +84,25 @@
 	"content": "You can change the MyCollab settings such as server name (or IP), port, emails etc. in the configuration file locates in $MYCOLLAB_HOME/config/application.properties\n#===================================================== # You can visit link https://doc.mycollab.com/getting-started/configuration/ # to get all configuration fieldBuilder and their meanings #===================================================== #===================================================== # SITE CONFIGURATION #===================================================== app.siteName=MyCollab app.notifyEmail=\u0026lt;email notification\u0026gt; # You do not change the rest server information if you are not sure what you are doing server.address=localhost server.apiUrl=https://api.mycollab.com/ server.storageSystem=file server.siteUrl=http://%s:%d/ server.resourceDownloadUrl=http://%s:%d/file/ server.cdnUrl=http://%s:%d/assets/ #===================================================== # DATABASE CONFIGURATION #===================================================== spring.datasource.driverClassName=com.mysql.cj.jdbc.Driver spring.datasource.url=jdbc:mysql://localhost/mycollab?useUnicode=true\u0026amp;characterEncoding=utf-8\u0026amp;autoReconnect=true\u0026amp;rewriteBatchedStatements=true\u0026amp;useCompression=true\u0026amp;useServerPrepStmts=false\u0026amp;verifyServerCertificate=false\u0026amp;useSSL=false\u0026amp;allowPublicKeyRetrieval=true spring.datasource.username=\u0026lt;username\u0026gt; spring.datasource.password=\u0026lt;password\u0026gt; #===================================================== # MAIL CONFIGURATION # # SMTP Mail setting to use in #===================================================== mail.smtphost= mail.port=0 mail.username= mail.password= mail.startTls=false mail.ssl=false #===================================================== # ERROR REPORTING # This email is used to receive any error causes during # MyCollab running. It just collects java stack trace not # any end user sensitive data. In case you are serious not # want to send report automatically to our team, you can # leave this field to empty #===================================================== mail.errorTo=error@mycollab.com  "
 },
 {
+	"uri": "/getting-started/need-help/",
+	"title": "Need Help",
+	"tags": [],
+	"description": "",
+	"content": "Having troubles in running MyCollab? You can contact us in several ways to get our support\n Support forum Use our support forum for the user issues such as installation, features, and how to use MyCollab\n Slack channel If you have any ideas to make MyCollab better, or any question relates to the technical issues then you can discuss in this channel\n Contact page If you have any inquiry, sales, or want to make the partner, the contact page is the fastest approach to talk with us\n  "
+},
+{
 	"uri": "/releases/",
 	"title": "Releases",
 	"tags": [],
 	"description": "",
 	"content": "  MyCollab 5.x.x   MyCollab 6.x.x   MyCollab 7.x.x   "
+},
+{
+	"uri": "/getting-started/editions/",
+	"title": "Editions",
+	"tags": [],
+	"description": "",
+	"content": " Editions Differences between editions MyCollab offers several choices for potential and existing customers. You are free to select the best solution that fits your business needs. Basically, MyCollab presents you with three choices of usage:\nCommunity Edition Being an open source of MyCollab with GPL v3 license, the Community Edition contains basic features necessary for freelancers or small companies that have basic needs for collaboration, customer management, etc. MyCollab\u0026rsquo;s source codes are bundled in delivery and you can customize things in any way you want as long as the terms and conditions of GPL v3 license are retained.\nPremium Edition This edition incorporate Community Edition with several extra closed source of MyCollab modules to help the system run faster, having more features. This edition is the right fit for medium-sized company that needs advanced features of project management, customer management and more. We also provide technical support, bug fixes and free upgrades within 1 year.\nOn-demand Edition This edition does not require you to undertake any technical tasks such as installation, configuration, etc. but to register an account and invite your team members. This edition is updated by MyCollab team every two weeks for continuously added features, bug fixing, backup safe database and improved documentation. It is also the most economical solution compared with those above editions.\nWhich version should I choose? Community Edition It is usually used within academic environments and non-critical implementations. It is supported only through the forum, which may not provide Official Support on MyCollab\u0026rsquo;s Team behalf. It is not recommended for business environments because it may contain bugs provided with neither support nor resolution time guarantee, which can at times be essential.\nPremium Edition It has all of the features the Community Edition does, not to mention many more as compared above. This edition is recommended if you cannot use our on-demand service due to organization policy or law requisite. Note: Please bear in mind that there are actually more differences, but not all of them have been addressed except for the main ones.\nOn-demand Edition We ensure immediate support on any issue, access to MyCollab development team, new features and versions, as well as advice to get the most out of MyCollab and recommendations to avoid common problems. In this case you can reach us via our contact page https://www.mycollab.com/contact for further information.\nI cannot decide which is the best edition for my business needs If you need any features unlisted here and feel unsure whether or not MyCollab provides or will provide them, send us a feature inquiry via our contact form https://www.mycollab.com/contact or check our road map for more information. Last but not least, we encourage you to use professional or on-demand edition. We are the author of MyCollab and we offer very competitive rate of customization for community and premium edition, so please do not hesitate to contact us if you need a unique solution for your business with low cost.\n"
 },
 {
 	"uri": "/categories/",
@@ -88,7 +116,7 @@
 	"title": "MyCollab Documentation",
 	"tags": [],
 	"description": "",
-	"content": "We give you the brief introduction of using MyCollab. If you have any issues relate of running MyCollab, please post your question to our support forum or joined our Slack channel\nWe are going to update our documentation per your feedbacks on various channels. Let make the product becomes better!\n"
+	"content": "We give you the brief introduction of using MyCollab. If you have any issues relate of running MyCollab, please post your question to our support forum or joined our Slack channel\nWe are going to update our documentation per your feedbacks on various channels. Let make the product becomes better!c\n"
 },
 {
 	"uri": "/tags/",

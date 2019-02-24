@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/administration/auto-upgrade/</loc>
+  </url>
+  
+  <url>
     <loc>/getting-started/</loc>
   </url>
   
@@ -20,6 +24,10 @@
   
   <url>
     <loc>/development/</loc>
+  </url>
+  
+  <url>
+    <loc>/administration/manual-upgrade/</loc>
   </url>
   
   <url>
@@ -43,7 +51,15 @@
   </url>
   
   <url>
+    <loc>/getting-started/need-help/</loc>
+  </url>
+  
+  <url>
     <loc>/releases/</loc>
+  </url>
+  
+  <url>
+    <loc>/getting-started/editions/</loc>
   </url>
   
   <url>

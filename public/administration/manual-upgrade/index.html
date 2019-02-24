@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
-    <title>Development :: Documentation for MyCollab</title>
+    <title>Manual Upgrade :: Documentation for MyCollab</title>
 
     
     <link href="/css/nucleus.css?1551017947" rel="stylesheet">
@@ -32,7 +32,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/development/">
+  <body class="" data-url="/administration/manual-upgrade/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -241,8 +241,8 @@
   
     
     <li data-nav-id="/development/" title="Development" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/development/">
@@ -303,7 +303,7 @@
   
     
     <li data-nav-id="/administration/" title="Administration" class="dd-item 
-        
+        parent
         
         
         ">
@@ -358,8 +358,8 @@
   
     
     <li data-nav-id="/administration/manual-upgrade/" title="Manual Upgrade" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/administration/manual-upgrade/">
@@ -557,6 +557,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -567,7 +569,13 @@
             
           
           
-            <a href='/'>MyCollab Documentation</a> > Development
+            
+            
+          
+          
+            <a href='/'>MyCollab Documentation</a> > <a href='/administration/'>Administration</a> > Manual Upgrade
+          
+         
           
          
           
@@ -576,14 +584,29 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#stop-the-current-mycollab-running">Stop the current MyCollab running</a></li>
+<li><a href="#download-mycollab">Download MyCollab</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
 
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>Manual Upgrade</h1>
           
 
         
@@ -591,15 +614,57 @@
 
 
 
-<h1 id="development">Development</h1>
+<p>Manual upgrade is similar than <a href="/getting-started/installation/">installing the new MyCollab instance</a>, except you re-use the database files and the file assets of the previous version.</p>
+
+<h2 id="stop-the-current-mycollab-running">Stop the current MyCollab running</h2>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	Windows
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <p>Open the Windows Explorer, go to the folder <code>$MYCOLLAB_HOME/bin</code> and click the bat file <code>shutdown.bat</code></p>
+
+    </div>
+</div>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	Linux, MacOS
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <p>Open the terminal, go to the folder <code>$MYCOLLAB_HOME/bin</code> and run the script file <code>shutdown.sh</code></p>
+
+    </div>
+</div>
+
+<h2 id="download-mycollab">Download MyCollab</h2>
+
+<p>Go to <a href="https://mycollab.com/on-premise/">https://mycollab.com/on-premise/</a> and select the appropriate MyCollab distribution for your organization. Delete the folders <code>bin</code>, <code>lib</code>, <code>config</code>, <code>i18</code> and unzip the downloaded file to the existing MyCollab folder.</p>
+
+<div class="notices warning" ><p>Do not delete the entire old MyCollab installation folder before getting everything done! All of file assets are kept in the hidden folder .mycollab. If you delete this folder then all file uploads such as attachments, profile pictures, documents, etc. will be deleted permanently.</p>
+</div>
+
+
+<p>Then you follow the instruction <a href="/getting-started/installation/#install-mycollab-on-your-server">Install MyCollab on your server</a>, and re-enter your database information, mail settings, etc. Then it will redirect you to the login page without setting up the application parameters again.</p>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
         
         </div> 
         
@@ -732,6 +797,40 @@
             
                 
                     
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -762,44 +861,11 @@
             
         
                     
-            
-        
-                    
                         
             
             
                 
                     
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -819,6 +885,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -890,10 +959,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/getting-started/editions/" title="Editions"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/administration/auto-upgrade/" title="Auto Upgrade"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/development/translating/" title="Translation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/releases/" title="Releases" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

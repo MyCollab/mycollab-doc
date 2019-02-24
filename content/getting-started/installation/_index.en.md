@@ -28,11 +28,11 @@ Go to https://mycollab.com/on-premise/ and select the appropriate MyCollab distr
 Start MyCollab is different between Windows, and Unix. 
 
 {{%expand "Windows" %}}
-Open the Windows Explorer, go to the folder $MYCOLLAB_HOME/bin and click the bat file `startup.bat`
+Open the Windows Explorer, go to the folder `$MYCOLLAB_HOME/bin` and click the bat file `startup.bat`
 {{% /expand%}}
 
 {{%expand "Linux, MacOS" %}}
-Open the terminal, go to the folder $MYCOLLAB_HOME/bin and run the script file `startup.sh`
+Open the terminal, go to the folder `$MYCOLLAB_HOME/bin` and run the script file `startup.sh`
 {{% /expand%}}
 
 The default port of running MyCollab is 8080. You are able to change the port by edit the value of the key `server.port` in the template configuration file `$MYCOLLAB_HOME/config/application.properties.ftl`. After running the executable file `startup.sh` (on Linux / MacOS) or `startup.bat` (on Windows) then you open the browser with the address `http://<serveraddress>::<port>`

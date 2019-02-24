@@ -4,6 +4,20 @@ weight: 7
 pre: <b>3. </b>
 ---
 
+Version 7.0.1
+-------------
+
+**Improvements & New Features**
+
+* Add file module to the project
+* Manage email verification statuses
+
+**Bug Fixes**
+
+* Show error message when user edit ticket which has unset duration value
+* Some long text don't display in the box
+* Can not display the right date value in project notification
+
 Version 7.0.0
 -------------
 
