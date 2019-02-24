@@ -18,7 +18,7 @@
 	"title": "Getting started",
 	"tags": [],
 	"description": "",
-	"content": " Getting started If you are getting started with MyCollab, reading this section. It will help you know how to install and configure MyCollab to let it run well in your organization.\n Requirements   Installation   Configuration   Need Help   Editions   "
+	"content": " Getting started If you are getting started with MyCollab, reading this section. It will help you know how to install and configure MyCollab to let it run well in your organization.\n Requirements   Installation   Configuration   Need Help?   Editions   "
 },
 {
 	"uri": "/releases/5.x.x/",
@@ -53,7 +53,7 @@
 	"title": "Development",
 	"tags": [],
 	"description": "",
-	"content": " Development "
+	"content": " Development MyCollab community is the open source product, and you can customize it to fit your requirements. Having any question, please ask us at Need help\n Setup Mycollab projects with IntelliJ   Skills for developing MyCollab   Testing   Translation   "
 },
 {
 	"uri": "/administration/manual-upgrade/",
@@ -106,7 +106,7 @@
 },
 {
 	"uri": "/getting-started/need-help/",
-	"title": "Need Help",
+	"title": "Need Help?",
 	"tags": [],
 	"description": "",
 	"content": "Having troubles in running MyCollab? You can contact us in several ways to get our support\n Support forum Use our support forum for the user issues such as installation, features, and how to use MyCollab\n Slack channel If you have any ideas to make MyCollab better, or any question relates to the technical issues then you can discuss in this channel\n Contact page If you have any inquiry, sales, or want to make the partner, the contact page is the fastest approach to talk with us\n  "
