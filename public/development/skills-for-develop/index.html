@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
-    <title>Requirements :: Documentation for MyCollab</title>
+    <title>Skills for developing MyCollab :: Documentation for MyCollab</title>
 
     
     <link href="/css/nucleus.css?1551036827" rel="stylesheet">
@@ -32,7 +32,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/getting-started/requirements/">
+  <body class="" data-url="/development/skills-for-develop/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -75,7 +75,7 @@
   
     
     <li data-nav-id="/getting-started/" title="Getting started" class="dd-item 
-        parent
+        
         
         
         ">
@@ -104,8 +104,8 @@
   
     
     <li data-nav-id="/getting-started/requirements/" title="Requirements" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/getting-started/requirements/">
@@ -241,7 +241,7 @@
   
     
     <li data-nav-id="/development/" title="Development" class="dd-item 
-        
+        parent
         
         
         ">
@@ -296,8 +296,8 @@
   
     
     <li data-nav-id="/development/skills-for-develop/" title="Skills for developing MyCollab" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/development/skills-for-develop/">
@@ -609,6 +609,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -623,7 +625,7 @@
             
           
           
-            <a href='/'>MyCollab Documentation</a> > <a href='/getting-started/'>Getting started</a> > Requirements
+            <a href='/'>MyCollab Documentation</a> > <a href='/development/'>Development</a> > Skills for developing MyCollab
           
          
           
@@ -634,6 +636,24 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#spring-boot">Spring boot</a></li>
+<li><a href="#mybatis">Mybatis</a></li>
+<li><a href="#vaadin">Vaadin</a></li>
+<li><a href="#guava">Guava</a></li>
+<li><a href="#quartz">Quartz</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
@@ -641,17 +661,37 @@
         
         <div id="body-inner">
           
-            <h1>Requirements</h1>
+            <h1>Skills for developing MyCollab</h1>
           
 
         
 
 
-<ul>
-<li>Java Runtime Environment 8+: MyCollab could run when any JVM compatible platform such as Oracle JRE or OpenJDK. If you do not have installed java, you can get it <a href="https://www.java.com/en/download/">here</a>.</li>
-<li>MySQL database, version 5.6+: If you do not have installed MySQL instance, you can get it <a href="https://dev.mysql.com/downloads/mysql/">here</a>.</li>
-<li>1 GB RAM minimum, 2 GB RAM recommended</li>
-</ul>
+
+
+<p>MyCollab uses the varieties of frameworks, libraries to develop the entire product. Its main programming languages are Java and Kotlin. We don&rsquo;t have any specific rules which files we should write by Java or Kotlin. But, we try to write the good code, and we found that Kotlin helps us to write cleaner code, less error prone. However, it is difficult to write entire existing codebase in Kotlin. There are tips that many back-end codes are written by Kotlin.</p>
+
+<p>Below are the main frameworks, libraries are used in MyCollab.</p>
+
+<h2 id="spring-boot">Spring boot</h2>
+
+<p>MyCollab uses the micro service architecture, although you can see see it in the community codebase. We use Spring boot 2 to manage all services in MyCollab from both front-end, back-end.</p>
+
+<h2 id="mybatis">Mybatis</h2>
+
+<p>Mybatis is the persistence framework to interact with MySQL. We use MyBatis customize SQL alot to provide the dynamic query SQL, complex SQL execution.</p>
+
+<h2 id="vaadin">Vaadin</h2>
+
+<p>Vaadin is an UI framework for the MyCollab front-end. At this moment, we are using the Vaadin 8.</p>
+
+<h2 id="guava">Guava</h2>
+
+<p>Guava is used extensively in MyCollab as the complementary APIs for the lacking support from the standard Java API. We also use Guava Eventbus for the event-based programming model in MyCollab project.</p>
+
+<h2 id="quartz">Quartz</h2>
+
+<p>The scheduler framework. All MyCollab schedule tasks are the Quart jobs that are managed as Spring services.</p>
 
 
 <footer class=" footline" >
@@ -689,6 +729,8 @@
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -704,26 +746,6 @@
             
             
                 
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -784,24 +806,6 @@
             
         
                     
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
                         
             
             
@@ -818,10 +822,32 @@
             
         
                     
+            
+        
+                    
                         
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -838,6 +864,26 @@
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -978,10 +1024,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/getting-started/" title="Getting started"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/development/setup-mycollab-projects-with-intellij-ide/" title="Setup Mycollab projects with IntelliJ"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/getting-started/installation/" title="Installation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/development/translating/" title="Translation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

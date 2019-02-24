@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/development/setup-mycollab-projects-with-intellij-ide/</loc>
+  </url>
+  
+  <url>
     <loc>/administration/auto-upgrade/</loc>
   </url>
   
@@ -12,6 +16,10 @@
   
   <url>
     <loc>/releases/5.x.x/</loc>
+  </url>
+  
+  <url>
+    <loc>/development/skills-for-develop/</loc>
   </url>
   
   <url>

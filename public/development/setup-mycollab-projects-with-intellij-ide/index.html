@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
-    <title>Requirements :: Documentation for MyCollab</title>
+    <title>Setup Mycollab projects with IntelliJ :: Documentation for MyCollab</title>
 
     
     <link href="/css/nucleus.css?1551036827" rel="stylesheet">
@@ -32,7 +32,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/getting-started/requirements/">
+  <body class="" data-url="/development/setup-mycollab-projects-with-intellij-ide/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -75,7 +75,7 @@
   
     
     <li data-nav-id="/getting-started/" title="Getting started" class="dd-item 
-        parent
+        
         
         
         ">
@@ -104,8 +104,8 @@
   
     
     <li data-nav-id="/getting-started/requirements/" title="Requirements" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/getting-started/requirements/">
@@ -241,7 +241,7 @@
   
     
     <li data-nav-id="/development/" title="Development" class="dd-item 
-        
+        parent
         
         
         ">
@@ -270,8 +270,8 @@
   
     
     <li data-nav-id="/development/setup-mycollab-projects-with-intellij-ide/" title="Setup Mycollab projects with IntelliJ" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/development/setup-mycollab-projects-with-intellij-ide/">
@@ -609,6 +609,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -623,7 +625,7 @@
             
           
           
-            <a href='/'>MyCollab Documentation</a> > <a href='/getting-started/'>Getting started</a> > Requirements
+            <a href='/'>MyCollab Documentation</a> > <a href='/development/'>Development</a> > Setup Mycollab projects with IntelliJ
           
          
           
@@ -634,6 +636,23 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#clone-mycollab-on-github">Clone MyCollab on Github</a></li>
+<li><a href="#import-mycollab-projects-to-intellij">Import MyCollab projects to IntelliJ</a></li>
+<li><a href="#install-mysql-database-and-create-mycollab-schema">Install MySQL database and create MyCollab schema</a></li>
+<li><a href="#run-mycollab-program">Run MyCollab program</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
@@ -641,17 +660,45 @@
         
         <div id="body-inner">
           
-            <h1>Requirements</h1>
+            <h1>Setup Mycollab projects with IntelliJ</h1>
           
 
         
 
 
-<ul>
-<li>Java Runtime Environment 8+: MyCollab could run when any JVM compatible platform such as Oracle JRE or OpenJDK. If you do not have installed java, you can get it <a href="https://www.java.com/en/download/">here</a>.</li>
-<li>MySQL database, version 5.6+: If you do not have installed MySQL instance, you can get it <a href="https://dev.mysql.com/downloads/mysql/">here</a>.</li>
-<li>1 GB RAM minimum, 2 GB RAM recommended</li>
-</ul>
+
+
+<p>You can customize the community MyCollab edition freely to fit your team&rsquo;s requirements and you can controbute back to the community follows the GPL v3 terms.</p>
+
+<h2 id="clone-mycollab-on-github">Clone MyCollab on Github</h2>
+
+<p>Clone MyCollab on Github <a href="https://github.com/MyCollab/mycollab">https://github.com/MyCollab/mycollab</a>, you should watch this project and fork it on Github. It would be nicer if you star MyCollab, it would encourage us to share our works to the community without any fee.</p>
+
+<h2 id="import-mycollab-projects-to-intellij">Import MyCollab projects to IntelliJ</h2>
+
+<p>Open the IntelliJ, and create the new project from the existing sources <code>Files &gt; New &gt; Project from existing sources ...</code> then you choose <code>Import project from external model: Maven</code></p>
+
+<p>Then select import options, tick two non-default options <code>Search for project recursively</code> and <code>Import Maven projects automatically</code>. Follow next steps to finish</p>
+
+<p><img src="/images/development/import_maven_projects.png" alt="Import Maven projects" /></p>
+
+<p>Wait for a couple minutes to let IntelliJ import MyCollab projects.</p>
+
+<h2 id="install-mysql-database-and-create-mycollab-schema">Install MySQL database and create MyCollab schema</h2>
+
+<p>Go to MySQL site, and download the latest MySQL database. At least, your MySQL version is greater than 5.6.</p>
+
+<p>Create MyCollab schema by executing this command</p>
+
+<pre><code>CREATE SCHEMA `mycollab` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ;
+</code></pre>
+
+<h2 id="run-mycollab-program">Run MyCollab program</h2>
+
+<p>Choose to run MyCollab application,
+<img src="/images/development/run_mycollab.png" alt="Run MyCollab" /></p>
+
+<p>then you can setup the first MyCollab program as the step of <a href="//getting-started/installation/#install-mycollab-on-your-server">installing MyCollab</a>. Then it is done!</p>
 
 
 <footer class=" footline" >
@@ -689,6 +736,8 @@
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -704,26 +753,6 @@
             
             
                 
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -784,24 +813,6 @@
             
         
                     
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
                         
             
             
@@ -818,10 +829,49 @@
             
         
                     
+            
+        
+                    
                         
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -978,10 +1028,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/getting-started/" title="Getting started"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/development/" title="Development"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/getting-started/installation/" title="Installation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/development/skills-for-develop/" title="Skills for developing MyCollab" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
