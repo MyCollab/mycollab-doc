@@ -70,11 +70,11 @@
 	"content": " Java Runtime Environment 8+: MyCollab could run when any JVM compatible platform such as Oracle JRE or OpenJDK. If you do not have installed java, you can get it here. MySQL database, version 5.6+: If you do not have installed MySQL instance, you can get it here. 1 GB RAM minimum, 2 GB RAM recommended  "
 },
 {
-	"uri": "/development/translating/",
-	"title": "Translation",
+	"uri": "/development/testing/",
+	"title": "Testing",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "We don\u0026rsquo;t have the set of test cases that cover all MyCollab codebase, but we have the test cases that cover major branches of the critical business of MyCollab. We share these test cases in the folder test of the module mycollab-services-community.\nWe use JUnit 5, Spring test framework, assertJ and DbUnit for our integration testing against the H2 database. We are trying to keep the green status for all codes commit to Github, if you changes our codebase then make sure all test cases are passed.\n"
 },
 {
 	"uri": "/getting-started/installation/",
@@ -82,6 +82,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Check Java requirements You must need Java JRE 1.8 or higher to run MyCollab. Before you begin, you should check your current Java installation by using the following command:\njava -version  Create the new MySQL Schema Create the new MySQL schema with the following command\nCREATE SCHEMA `mycollab` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ;  Download MyCollab Go to https://mycollab.com/on-premise/ and select the appropriate MyCollab distribution for your organization. Download it and unzip on your local server, from now let\u0026rsquo;s call $MYCOLLAB_HOME is the folder where you unzip MyCollab distribution.\nInstall MyCollab on your server Start MyCollab is different between Windows, and Unix.\n  Windows   Open the Windows Explorer, go to the folder $MYCOLLAB_HOME/bin and click the bat file startup.bat\n    Linux, MacOS   Open the terminal, go to the folder $MYCOLLAB_HOME/bin and run the script file startup.sh\n  The default port of running MyCollab is 8080. You are able to change the port by edit the value of the key server.port in the template configuration file $MYCOLLAB_HOME/config/application.properties.ftl. After running the executable file startup.sh (on Linux / MacOS) or startup.bat (on Windows) then you open the browser with the address http://\u0026lt;serveraddress\u0026gt;::\u0026lt;port\u0026gt;\nThe server address could be the server name or the IP value depends on your specific environment\n You fill the appropriate values per the page instructions\nand press \u0026lsquo;Setup\u0026rsquo; when you\u0026rsquo;ve done. Wait for a couple of minutes to let MyCollab prepare the database, and other settings. After it is done, it will redirect you to the site setting page\nChoose your admin username/password, and the date time format then press Setup button, you are ready for using MyCollab!\n"
+},
+{
+	"uri": "/development/translating/",
+	"title": "Translation",
+	"tags": [],
+	"description": "",
+	"content": ""
 },
 {
 	"uri": "/administration/",
