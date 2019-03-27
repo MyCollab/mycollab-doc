@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
-    <title>Categories :: Documentation for MyCollab</title>
+    <title>Email configuration :: Documentation for MyCollab</title>
 
     
     <link href="/css/nucleus.css?1553696474" rel="stylesheet">
@@ -32,7 +32,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/categories/">
+  <body class="" data-url="/administration/email-configuration/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -381,7 +381,7 @@
   
     
     <li data-nav-id="/administration/" title="Administration" class="dd-item 
-        
+        parent
         
         
         ">
@@ -462,8 +462,8 @@
   
     
     <li data-nav-id="/administration/email-configuration/" title="Email configuration" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/administration/email-configuration/">
@@ -669,7 +669,19 @@
                     
           
           
-            Categories
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>MyCollab Documentation</a> > <a href='/administration/'>Administration</a> > Email configuration
+          
+         
+          
+         
           
         
                  
@@ -690,12 +702,23 @@
         
         <div id="body-inner">
           
-            <h1>Categories</h1>
+            <h1>Email configuration</h1>
           
 
         
 
 
+<p>You need to set up email to send the notifications about the changes in the project, or send the invitation to other people join to MyCollab. You can set up the email configuration while set up MyCollab, or you can can change these settings later in the <code>%MYCOLLAB_HOME%/config/application.properties</code>. Open the config file, and find the section</p>
+
+<pre><code>mail.smtphost= &lt;your smtp host&gt;
+mail.port= 
+mail.username=
+mail.password=
+mail.startTls= // true if secure method is startTls or false if otherwise
+mail.ssl= // true if secure method is ssl or false if otherwise. SSl and startTls must not have the same true value
+</code></pre>
+
+<p>Change these properties to the appropriate values according to the email provider user manual. Restart MyCollab to take the change is affected.</p>
 
 
 <footer class=" footline" >
@@ -916,6 +939,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -930,6 +954,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -963,6 +990,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -981,6 +1009,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1052,8 +1083,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/administration/manual-upgrade/" title="Manual Upgrade"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/getting-started/" title="Getting started" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/releases/" title="Releases" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

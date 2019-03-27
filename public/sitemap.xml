@@ -47,6 +47,10 @@
   </url>
   
   <url>
+    <loc>/administration/email-configuration/</loc>
+  </url>
+  
+  <url>
     <loc>/getting-started/installation/</loc>
   </url>
   
