@@ -4,6 +4,29 @@ weight: 7
 pre: <b>3. </b>
 ---
 
+Version 7.0.2
+-------------
+
+**Library Upgrades**
+
+* Vaadin 8.7.2, Mybatis 3.5.1
+
+**Bug Fixes**
+
+* Can not send the email notification to all members in the project
+* Not display the permissions when editing the project member
+* Display the pretty time against the UTC timezone instead of the user timezone
+
+**Improvements & New Features**
+
+* [Premium] Can change the border color of action, option or danger buttons
+* [Premium] Milestone display the wrong logging time in some special cases
+* Support bulk invitations of users
+* Minor UI improvements
+* Support versions, components relationship in task, and risk
+* Support relationship among tickets
+* Easy navigating among tickets by ticket key
+
 Version 7.0.1
 -------------
 
