@@ -4,6 +4,17 @@ weight: 7
 pre: <b>3. </b>
 ---
 
+Version 7.0.3
+-------------
+
+**Library Upgrades**
+
+* Jackrabbit 2.19.3
+
+**Bug Fixes**
+
+* Fix the content issue in Jackrabbit to prevent adding new entity
+
 Version 7.0.2
 -------------
 
